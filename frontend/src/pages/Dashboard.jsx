@@ -38,7 +38,7 @@ function Dashboard() {
   return (
     <>
       <section className='heading'>
-        <p>Hi... {user && user.name}</p>
+        <p className='hehehe2'>Hi... {user && user.name}</p>
         <h1>Dashboard</h1>
       </section>
 
