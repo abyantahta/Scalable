@@ -5,9 +5,15 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
+    "service1": "node service1/server.js",
+    "service2": "node service2/server.js",
+    "service3": "node service3/server.js",
+    "service4": "node service4/server.js",
+    "service5": "node service5/server.js",
+    "service6": "node service6/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run service1\" \"npm run service2\" \"npm run service3\" \"npm run service4\" \"npm run service5\" \"npm run service6\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Brad Traversy",
