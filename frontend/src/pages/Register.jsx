@@ -66,12 +66,12 @@ function Register() {
     <>
       <section className='heading'>
         <h1>
-          <FaUser /> Register
+        Register
         </h1>
-        <p>Please create an account</p>
+        <p className='hehehe'>Please create an account</p>
       </section>
 
-      <section className='form'>
+      <section className='form' id='register'>
         <form onSubmit={onSubmit}>
           <div className='form-group'>
             <input
@@ -83,6 +83,7 @@ function Register() {
               placeholder='Enter your name'
               onChange={onChange}
             />
+            <label htmlFor="">Name</label>
           </div>
           <div className='form-group'>
             <input
@@ -94,6 +95,7 @@ function Register() {
               placeholder='Enter your email'
               onChange={onChange}
             />
+            <label htmlFor="">Email</label>
           </div>
           <div className='form-group'>
             <input
@@ -105,6 +107,7 @@ function Register() {
               placeholder='Enter password'
               onChange={onChange}
             />
+            <label htmlFor="">Password</label>
           </div>
           <div className='form-group'>
             <input
@@ -116,10 +119,11 @@ function Register() {
               placeholder='Confirm password'
               onChange={onChange}
             />
+            <label htmlFor="">Confirm Password</label>
           </div>
           <div className='form-group'>
             <button type='submit' className='btn btn-block'>
-              Submit
+              Register
             </button>
           </div>
         </form>

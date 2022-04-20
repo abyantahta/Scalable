@@ -38,8 +38,8 @@ function Dashboard() {
   return (
     <>
       <section className='heading'>
-        <h1>Welcome {user && user.name}</h1>
-        <p>Goals Dashboard</p>
+        <p>Hi... {user && user.name}</p>
+        <h1>Dashboard</h1>
       </section>
 
       <GoalForm />

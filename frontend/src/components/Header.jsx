@@ -17,11 +17,12 @@ function Header() {
   return (
     <header className='header'>
       <div className='logo'>
-        <Link to='/'>GoalSetter</Link>
+        <Link to='/'>Todolist App</Link>
       </div>
       <ul>
         {user ? (
           <li>
+            {/* <h3>Hi..{user.name}</h3> */}
             <button className='btn' onClick={onLogout}>
               <FaSignOutAlt /> Logout
             </button>
