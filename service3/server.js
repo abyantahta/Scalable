@@ -13,7 +13,6 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.use('/api3/goals', require('./routes/goalRoutes'))
-app.use('/api3/users', require('./routes/userRoutes'))
 
 // Serve frontend
 if (process.env.NODE_ENV === 'production') {
